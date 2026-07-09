@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analisis Tren PPDB MI Nurul Falah</title>
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>Analisis Tren Pendaftaran Peserta Didik Baru</h1>
+        <h2>MI Nurul Falah</h2>
+    </header>
+    <main class="grid-container">
+        <section class="card" id="weeklyChartSection">
+            <h3>Grafik Jumlah Pendaftar per Minggu</h3>
+            <canvas id="weeklyChart"></canvas>
+        </section>
+        <section class="card" id="maChartSection">
+            <h3>Grafik Moving Average (3 Minggu)</h3>
+            <canvas id="maChart"></canvas>
+        </section>
+        <section class="card" id="growthTableSection">
+            <h3>Tabel Growth Rate antar Minggu (%)</h3>
+            <table id="growthTable">
+                <thead>
+                    <tr><th>Minggu</th><th>Growth Rate (%)</th></tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+        <section class="card" id="insightsSection">
+            <h3>Insight &amp; Rekomendasi</h3>
+            <div id="insightsContent"></div>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
