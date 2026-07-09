@@ -1,0 +1,6 @@
+uploads/berkas/
+uploads/foto/
+*.log
+ppdb_export*.sql
+aiven_import.php
+aiven_verify.php
