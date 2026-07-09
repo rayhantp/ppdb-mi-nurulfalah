@@ -1,0 +1,109 @@
+/* style.css - Premium dark gradient theme */
+
+/* Import Inter font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+:root {
+  --primary-bg: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+  --card-bg: rgba(255, 255, 255, 0.08);
+  --card-hover-bg: rgba(255, 255, 255, 0.12);
+  --text-primary: #f0f0f0;
+  --text-secondary: #c0c0c0;
+  --accent: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background: var(--primary-bg);
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+header.header {
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(8px);
+  margin-bottom: 1rem;
+}
+
+header.header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+header.header h2 {
+  font-size: 1.4rem;
+  font-weight: 400;
+  color: var(--text-secondary);
+}
+
+/* Grid layout */
+.grid-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 0 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.card:hover {
+  background: var(--card-hover-bg);
+  transform: translateY(-4px);
+}
+
+.card h3 {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  color: var(--accent);
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+thead {
+  background: rgba(255,255,255,0.12);
+}
+
+thead th {
+  padding: 0.75rem;
+  text-align: left;
+  color: var(--text-primary);
+}
+
+tbody td {
+  padding: 0.6rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+
+/* Insights content */
+#insightsContent {
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header.header h1 {font-size: 1.8rem;}
+  header.header h2 {font-size: 1.2rem;}
+}
